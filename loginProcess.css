@@ -1,0 +1,313 @@
+/* CSS Document */
+@charset "UTF-8";
+/* CSS used here will be applied after bootstrap.css */
+
+/* The main typography is Josefin Sans and the secondary font is Open Sans - import the two fonts from Google Font --> */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+/* Website's main colours are specified at the root */
+:root {
+  --orange: #D14B00;
+  --purple: #573C79;
+  --yellow: #E5AE00;
+  --brown: #241E13;
+  --pink: #F0D5CA;
+  --offwhite: #F7F1F1;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+h1, h2, h3, h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 800;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  text-shadow: -2px 1px 6px rgba(0, 0, 0, 0.32);
+}
+h1, h2, p {
+  color: var(--brown);
+}
+h1 {
+  font-size: 2.6rem;
+	
+}
+h2 {
+  font-size: 2.6rem;
+}
+h3 {
+  font-size: 1.2rem;
+  color: var(--brown); 
+  padding-top: 2.3rem;
+}
+a {
+	color: var(--orange);
+}
+a:hover, a:active, a:focus {
+	color: var(--purple);
+	text-decoration: none;
+}
+.footer p {
+  color: var(--offwhite);
+}
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+  width: 100%;
+  transition: background 0.4s ease-in;
+  z-index: 99999;
+  background: transparent;
+}
+.navbar-nav li {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.navbar .navbar-toggler {
+  position: relative;
+  height: 3.125rem;
+  width: 3.125rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.navbar .navbar-toggler .menu-icon-bar {
+  position: absolute;
+  left: 0.9375rem;
+  right: 0.9375rem;
+  height: 0.125rem;
+  background-color: var(--purple);
+  opacity: 0;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+  transition: all 0.3s ease-in;
+}
+.navbar .navbar-toggler .menu-icon-bar:first-child {
+  opacity: 1;
+  -webkit-transform: translateY(-1px) rotate(45deg);
+  -ms-sform: translateY(-1px) rotate(45deg);
+  transform: translateY(-1px) rotate(45deg);
+}
+.navbar .navbar-toggler .menu-icon-bar:last-child {
+  opacity: 1;
+  -webkit-transform: translateY(-1px) rotate(135deg);
+  -ms-sform: translateY(-1px) rotate(135deg);
+  transform: translateY(-1px) rotate(135deg);
+}
+.navbar .navbar-toggler.collapsed .menu-icon-bar {
+  opacity: 1;
+}
+.navbar .navbar-toggler.collapsed .menu-icon-bar:first-child {
+  -webkit-transform: translateY(-7px) rotate(0);
+  -ms-sform: translateY(-7px) rotate(0);
+  transform: translateY(-7px) rotate(0);
+}
+.navbar .navbar-toggler.collapsed .menu-icon-bar:last-child {
+  -webkit-transform: translateY(5px) rotate(0);
+  -ms-sform: translateY(5px) rotate(0);
+  transform: translateY(5px) rotate(0);
+}
+.navbar-dark .navbar-nav .nav-link {
+  position: relative;
+  color: var(--purple);
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--orange);
+}
+.navbar.fixed-top {
+  position: fixed;
+  animation: navbar-animation 0.6s;
+  background-color: var(--yellow);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--offwhite);
+}
+.page-holder {
+  min-height: 100vh;
+}
+.logo {
+  width: 23vh;
+}
+.jumbotron {
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.heroImg {
+  background-image: url("img/product-list-bg-desktop.png");
+  background-color: var(--pink);
+}
+
+.footer {
+  background-color: var(--orange);
+  color: var(--offwhite);
+  padding: 1.5rem;
+}
+/* Paddings of soical media icons */
+.fab {
+  padding-top: 4rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+/* Shopping cart in navbar */
+.fas {
+  padding-left: 1rem;
+}
+.footer-logo {
+  width: 77%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .links ul {
+  list-style-type: none;
+}
+.footer .links li a {
+  color: var(--offswhite);
+  transition: color 0.2s;
+  line-height: 2.4rem;
+}
+.footer .links li a:hover {
+  text-decoration: none;
+  color: var(--brown);
+}
+.footer-socialmedia {
+  padding: 0;
+}
+.footer-socialmedia i {
+  font-size: 1.3rem;
+}
+.footer-socialmedia a {
+  color: var(--offwhite);
+  transition: color 0.2s;
+}
+.footer-socialmedia a:hover {
+  color: var(--brown);
+}
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.py-5 {
+  padding-top: 7rem !important;
+  padding-bottom: 5rem !important;
+}
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 1.25rem;
+  }
+  .navbar-nav {
+    padding: 0 1.25rem;
+    background-color: var(--yellow);
+  }
+  .navbar.fixed-top .navbar-nav {
+    background: transparent;
+  }
+  .heroImg {
+    background-image: url("img/hero-img-splash-mobile.png");
+  }
+  .sectionOneImg {
+    background-image: url("img/homepage-bubbleOne-bg-img-Mobile.png");
+  }
+  .sectionTwoImg {
+    background-image: url("img/homepage-bubbleTwo-bg-img-Mobile.png");
+  }
+  .sectionThreeImg {
+    background-image: url("img/homepage-bubbleThree-bg-img-Mobile.png");
+  }
+  .py-5 {
+    padding-top: 12rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .jumbotron {
+    padding: 0;
+  }
+  .shopbtn, .section-button {
+    padding: 1.2rem 3rem;
+  }
+  .footer-socialmedia i {
+    font-size: 1.3rem;
+  }
+  /* Paddings of soical media icons */
+  .fab {
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+  }
+  h1, h2 {
+    line-height: 3.2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    line-height: 0;
+  }
+}
+@media screen and (min-width: 767px) {
+  
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 1.4375rem 0.9375rem;
+  }
+  .navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0.9375rem;
+    left: 30%;
+    right: 30%;
+    background-color: var(--offwhite);
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: transform 0.1s ease-in;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover::after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+ 
+}
+@-webkit-keyframes navbar-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes navbar-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
