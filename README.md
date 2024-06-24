@@ -1,1 +1,4 @@
 # teaven-bubble-tea
+## University Team Project - Web Programming Module
+
+This university project, developed during the first year as part of the Web Programming module, showcases collaborative efforts and foundational skills in web development. Built with HTML, CSS, and JavaScript, the project demonstrates our proficiency in creating a responsive and interactive web application. Utilizing frameworks such as Bootstrap for streamlined design and responsiveness, alongside JavaScript for client-side functionality, the project integrates dynamic elements to enhance user engagement. The team leveraged version control with Git and GitHub for seamless collaboration and project management, ensuring efficient code integration and troubleshooting. This project not only reflects our learning journey but also underscores our ability to apply theoretical knowledge to practical web development challenges, setting a solid foundation for future coursework and projects.
